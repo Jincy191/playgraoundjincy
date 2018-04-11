@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tournament</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Welcome to Tournament</h1>
+  <p>Want to Start Tournament</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>ENTER THE NAME OF TOURNAMENT</h2>
+      <!-- <p>  <button type="button" class="btn btn-primary">Click Me</button></p> -->
+        <form action="api/subtournament" method="post">
+        Tournament Name: <input type="text" name="tour_name"><br>
+        <input type="submit" value="Submit">
+        </form>
+        <form action="api/sub_tour_count" method="post">
+        <input type="submit" value="View Tournament">
+        </form>
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

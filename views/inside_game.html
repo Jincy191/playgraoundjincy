@@ -1,0 +1,36 @@
+<!-- <button type="button">Click Me!</button> -->
+<link rel="stylesheet" href="" type="text/css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<h1>Start Tournament</h1>
+<div class="login">
+    <h4 style="text-align: center">Add Player</h4><br>
+    <form method="post" action="api/registerPlayers">
+    <div class="container">
+        <div class = "row">
+            <!-- <input type="text" class = "col-md-6" style="background-color:lavender;" name="id" placeholder="Player Id" required="required" />
+        </div><br><br>
+        <div class = "row"> -->
+            <input type="text" class = "col-md-6" style="background-color:lavender;" name="tour_id" placeholder="Tournament Id" required="required" />
+        </div><br><br>
+
+        <div class = "row">
+            <input type="text" class = "col-md-6" style="background-color:lavender;" name="player_name" placeholder="Player name" required="required" />
+        </div><br><br>
+        <div class = "row">
+            <button type="submit" class = "col-md-6" style="background-color:gray;" class="btn btn-primary btn-block btn-large">Submit</button>
+        </div>
+    </div>
+    <script>
+  var myVar = <%- JSON.stringify(myVar) %>;
+</script>
+       <!-- <input type="text" name="first_name" placeholder="firstname" required="required" />
+      <input type="text" name="last_name" placeholder="lastname" required="required" />
+      <input type="text" name="email" placeholder="email" required="required" />
+        <input type="password" name="password" placeholder="Password" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>-->
+    </form>
+</div>
